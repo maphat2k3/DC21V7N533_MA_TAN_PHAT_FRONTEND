@@ -20,11 +20,17 @@ const routes = [
     name: "notfound",
     component: NotFound,
   },
+  {
+    path: "/contacts/add",
+    name: "contact.add",
+    component: () => import("@/views/ContactAdd.vue"),
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
 
 export default router;
